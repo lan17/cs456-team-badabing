@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE refactor PUBLIC "-//Borland Software Corporation//Refactor 1.0//EN" "http://www.borland.com/devsupport/jbuilder/dtds/refactor_1_0.dtd">
+<refactor>
+  <rename-package id="6AP0P4L3SS9FI4DXB77GF5Y0" creation-time="Tue Dec 04 13:42:32.864 EST 2007">
+    <old-package-name>jogl</old-package-name>
+    <new-package-name>edu.ohiou.lev_neiman.jogl</new-package-name>
+  </rename-package>
+  <rename-package id="6AP0KHGPKT9FMOEQ36T0QKH0" creation-time="Wed Dec 05 03:03:21.812 EST 2007">
+    <old-package-name>edu.ohiou.lev_neiman.jogl</old-package-name>
+    <new-package-name>edu.ohiou.lev_neiman.sceneapi</new-package-name>
+  </rename-package>
+  <rename-class id="6AP09UZ0ST9F52ZB86T0QKH0" creation-time="Wed Dec 05 06:28:17.421 EST 2007">
+    <old-class-name>edu.ohiou.lev_neiman.sceneapi.MDFile</old-class-name>
+    <new-class-name>edu.ohiou.lev_neiman.sceneapi.ModelFile</new-class-name>
+  </rename-class>
+  <rename-field id="6AP0V9XOZU9FVUGJG6T0QKH0" creation-time="Thu Dec 06 02:50:37.375 EST 2007">
+    <declaring-class-name>edu.ohiou.lev_neiman.sceneapi.Triangle</declaring-class-name>
+    <old-field-name>mtl</old-field-name>
+    <declared-field-type>Ljava/lang/String;</declared-field-type>
+    <new-field-name>material_name</new-field-name>
+  </rename-field>
+  <rename-package id="6AP08U13A0AFWJXRF6T0QKH0" creation-time="Sun Dec 09 19:40:23.515 EST 2007">
+    <old-package-name>edu.ohiou.lev_neiman.sceneapi.model_editor</old-package-name>
+    <new-package-name>edu.ohiou.lev_neiman.sceneapi.edit</new-package-name>
+  </rename-package>
+  <rename-class id="4AP08U13A0AFWJXRF6T0QKH0" creation-time="Sun Dec 09 19:50:48.843 EST 2007">
+    <old-class-name>edu.ohiou.lev_neiman.sceneapi.edit.ModelEditorUI</old-class-name>
+    <new-class-name>edu.ohiou.lev_neiman.sceneapi.edit.MaterialEditor</new-class-name>
+  </rename-class>
+  <rename-class id="2AP08U13A0AFWJXRF6T0QKH0" creation-time="Sun Dec 09 20:05:00.078 EST 2007">
+    <old-class-name>edu.ohiou.lev_neiman.sceneapi.edit.MaterialEditor</old-class-name>
+    <new-class-name>edu.ohiou.lev_neiman.sceneapi.edit.MaterialEditorUI</new-class-name>
+  </rename-class>
+  <rename-class id="6AP0SDQRWMFF3Z9KGYV0QKH0" creation-time="Tue Apr 29 16:04:54.406 EDT 2008">
+    <old-class-name>edu.ohiou.lev_neiman.sceneapi.ANode</old-class-name>
+    <new-class-name>edu.ohiou.lev_neiman.sceneapi.basic.ANode</new-class-name>
+  </rename-class>
+  <rename-class id="4AP0SDQRWMFF3Z9KGYV0QKH0" creation-time="Tue Apr 29 16:06:55.718 EDT 2008">
+    <old-class-name>edu.ohiou.lev_neiman.sceneapi.Coordinate</old-class-name>
+    <new-class-name>edu.ohiou.lev_neiman.sceneapi.basic.Coordinate</new-class-name>
+  </rename-class>
+  <rename-class id="2AP0SDQRWMFF3Z9KGYV0QKH0" creation-time="Tue Apr 29 16:07:31.140 EDT 2008">
+    <old-class-name>edu.ohiou.lev_neiman.sceneapi.Material</old-class-name>
+    <new-class-name>edu.ohiou.lev_neiman.sceneapi.basic.Material</new-class-name>
+  </rename-class>
+  <rename-class id="0AP0SDQRWMFF3Z9KGYV0QKH0" creation-time="Tue Apr 29 16:07:45.015 EDT 2008">
+    <old-class-name>edu.ohiou.lev_neiman.sceneapi.ModelFile</old-class-name>
+    <new-class-name>edu.ohiou.lev_neiman.sceneapi.basic.ModelFile</new-class-name>
+  </rename-class>
+  <rename-class id="Y9P0SDQRWMFF3Z9KGYV0QKH0" creation-time="Tue Apr 29 16:08:02.687 EDT 2008">
+    <old-class-name>edu.ohiou.lev_neiman.sceneapi.ModelFile_ReadError</old-class-name>
+    <new-class-name>edu.ohiou.lev_neiman.sceneapi.basic.ModelFile_ReadError</new-class-name>
+  </rename-class>
+  <rename-class id="W9P0SDQRWMFF3Z9KGYV0QKH0" creation-time="Tue Apr 29 16:08:21.578 EDT 2008">
+    <old-class-name>edu.ohiou.lev_neiman.sceneapi.TextureManager</old-class-name>
+    <new-class-name>edu.ohiou.lev_neiman.sceneapi.basic.TextureManager</new-class-name>
+  </rename-class>
+  <rename-class id="U9P0SDQRWMFF3Z9KGYV0QKH0" creation-time="Tue Apr 29 16:08:41.578 EDT 2008">
+    <old-class-name>edu.ohiou.lev_neiman.sceneapi.Triangle</old-class-name>
+    <new-class-name>edu.ohiou.lev_neiman.sceneapi.basic.Triangle</new-class-name>
+  </rename-class>
+  <rename-class id="S9P0SDQRWMFF3Z9KGYV0QKH0" creation-time="Tue Apr 29 16:08:59.953 EDT 2008">
+    <old-class-name>edu.ohiou.lev_neiman.sceneapi.ModelNode</old-class-name>
+    <new-class-name>edu.ohiou.lev_neiman.sceneapi.basic.ModelNode</new-class-name>
+  </rename-class>
+  <rename-class id="Q9P0SDQRWMFF3Z9KGYV0QKH0" creation-time="Tue Apr 29 16:09:11.031 EDT 2008">
+    <old-class-name>edu.ohiou.lev_neiman.sceneapi.MtlNode</old-class-name>
+    <new-class-name>edu.ohiou.lev_neiman.sceneapi.basic.MtlNode</new-class-name>
+  </rename-class>
+  <rename-class id="O9P0SDQRWMFF3Z9KGYV0QKH0" creation-time="Tue Apr 29 16:09:29.828 EDT 2008">
+    <old-class-name>edu.ohiou.lev_neiman.sceneapi.ModelFileManager</old-class-name>
+    <new-class-name>edu.ohiou.lev_neiman.sceneapi.basic.ModelFileManager</new-class-name>
+  </rename-class>
+  <rename-class id="M9P0SDQRWMFF3Z9KGYV0QKH0" creation-time="Tue Apr 29 16:10:00.921 EDT 2008">
+    <old-class-name>edu.ohiou.lev_neiman.sceneapi.DisplayListManager</old-class-name>
+    <new-class-name>edu.ohiou.lev_neiman.sceneapi.basic.DisplayListManager</new-class-name>
+  </rename-class>
+  <rename-class id="6AP0RYQ9XMFFUBGIYV0QKH0" creation-time="Tue Apr 29 16:18:54.609 EDT 2008">
+    <old-class-name>edu.ohiou.lev_neiman.sceneapi.HyperCube</old-class-name>
+    <new-class-name>edu.ohiou.lev_neiman.sceneapi.lol.HyperCube</new-class-name>
+  </rename-class>
+</refactor>

@@ -1,0 +1,184 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML><!--JBuilder QuickDoc-->
+<HEAD>
+<TITLE>Class edu.ohiou.lev_neiman.sceneapi.ModelFile</TITLE><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+</HEAD>
+<BODY>
+
+<H2>
+<FONT SIZE="-1">edu.ohiou.lev_neiman.sceneapi</FONT>
+<BR>Class ModelFile</H2>
+<DL>
+<DT>public class <B>ModelFile</B>
+</DL>
+<DL><DD><p>Title: class ModelFile</p> <p>Description: this class is container for data loaded from OBJ and MTL files. It prepares it for use in ModelNode.</p> <p>Copyright: Copyright (c) 2007</p> <p>Company: </p><DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Version:</B><DD>1.0</DD>
+<DT><B>Author:</B><DD>Lev A Neiman</DD>
+</DL>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF"><TD COLSPAN=1><FONT SIZE="+2">
+<B>Field Detail</B>
+</FONT></TD></TR></TABLE>
+
+<A NAME="name"></A>
+
+<H3>name</H3>
+<PRE>
+private java.lang.String <B>name</B></PRE>
+<DL><DD>unique name for this model.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<A NAME="separator"></A>
+
+<H3>separator</H3>
+<PRE>
+public static final java.lang.String <B>separator</B></PRE>
+<DL><DD>system specific file path separator.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<A NAME="data_folder"></A>
+
+<H3>data_folder</H3>
+<PRE>
+public static final java.lang.String <B>data_folder</B></PRE>
+<DL><DD>folder in which to look for model files.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<A NAME="coordinates"></A>
+
+<H3>coordinates</H3>
+<PRE>
+public java.util.Vector <B>coordinates</B></PRE>
+<DL><DD>vertices in this model.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<A NAME="triangles"></A>
+
+<H3>triangles</H3>
+<PRE>
+public java.util.Vector <B>triangles</B></PRE>
+<DL><DD>triangles that make up this model.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<A NAME="materials"></A>
+
+<H3>materials</H3>
+<PRE>
+public java.util.Hashtable <B>materials</B></PRE>
+<DL><DD>different material properties in this model.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<A NAME="texture_coordinates"></A>
+
+<H3>texture_coordinates</H3>
+<PRE>
+public java.util.Vector <B>texture_coordinates</B></PRE>
+<DL><DD>array of texture coordinates.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<A NAME="mtl_groups"></A>
+
+<H3>mtl_groups</H3>
+<PRE>
+public java.util.Hashtable <B>mtl_groups</B></PRE>
+<DL><DD>Hashtable which associates a material name with a group of triangles.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF"><TD COLSPAN=1><FONT SIZE="+2">
+<B>Constructor Detail</B>
+</FONT></TD></TR></TABLE>
+
+<A NAME="ModelFile(java.lang.String)"></A>
+
+<H3>ModelFile</H3>
+<PRE>
+public <B>ModelFile</B>(java.lang.String&nbsp;name)</PRE>
+<DL><DD><DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>name</CODE> - String name of the model to load</DD>
+</DL>
+<HR>
+
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF"><TD COLSPAN=1><FONT SIZE="+2">
+<B>Method Detail</B>
+</FONT></TD></TR></TABLE>
+
+<A NAME="expand(java.lang.String, char)"></A>
+
+<H3>expand</H3>
+<PRE>
+public static java.util.Vector <B>expand</B>(java.lang.String&nbsp;string,
+                                      char&nbsp;delimeter)</PRE>
+<DL><DD>This method takes string and breaks it into a Vector of strings based on a given delimeter<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>string</CODE> - String</DD>
+<DD><CODE>delimiter</CODE> - char</DD>
+<DT><B>Returns:</B><DD>Vector</DD>
+</DL>
+<HR>
+
+<A NAME="init()"></A>
+
+<H3>init</H3>
+<PRE>
+private void <B>init</B>()</PRE>
+<DL><DD>function that loads the data files.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<A NAME="sortMaterials()"></A>
+
+<H3>sortMaterials</H3>
+<PRE>
+private void <B>sortMaterials</B>()</PRE>
+<DL><DD>this method associates Material names to Vector's of triangles that belong to that material group.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<A NAME="readMTL(java.util.Scanner)"></A>
+
+<H3>readMTL</H3>
+<PRE>
+private void <B>readMTL</B>(java.util.Scanner&nbsp;s)</PRE>
+<DL><DD>this method loads materials from the MTL file.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>s</CODE> - Scanner</DD>
+<DT><B>Throws:</B><DD><CODE>ModelFile_ReadError</CODE> - </DD>
+</DL>
+<HR>
+
+<A NAME="readOBJ(java.util.Scanner)"></A>
+
+<H3>readOBJ</H3>
+<PRE>
+private void <B>readOBJ</B>(java.util.Scanner&nbsp;input)</PRE>
+<DL><DD>method to read OBJ file.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>input</CODE> - Scanner</DD>
+<DT><B>Throws:</B><DD><CODE>ModelFile_ReadError</CODE> - if any excpetion is caught</DD>
+</DL>
+<HR>
+
+</BODY>
+</HTML>
