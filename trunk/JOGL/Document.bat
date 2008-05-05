@@ -1,0 +1,1 @@
+javadoc -d c:\tmp\html edu.ohiou.lev_neiman.sceneapi edu.ohiou.lev_neiman.sceneapi.basic edu.ohiou.lev_neiman.sceneapi.visualize edu.ohiou.lev_neiman.sceneapi.edit.material_editor -private -exclude JavaDia

@@ -1,0 +1,276 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML><!--JBuilder QuickDoc-->
+<HEAD>
+<TITLE>Class edu.ohiou.lev_neiman.sceneapi.basic.ANode</TITLE><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+</HEAD>
+<BODY>
+
+<H2>
+<FONT SIZE="-1">edu.ohiou.lev_neiman.sceneapi.basic</FONT>
+<BR>Class ANode</H2>
+<DL>
+<DT>public class <B>ANode</B>
+</DL>
+<DL><DD><p>Title: ANode</p> <p>Description: Super class for all other nodes in the tree.</p> <p>Copyright: Lev A Neiman 2008</p> <p>Company: Ohio University EECS </p><DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Version:</B><DD>1.0</DD>
+<DT><B>Author:</B><DD>Lev A Neiman</DD>
+</DL>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF"><TD COLSPAN=1><FONT SIZE="+2">
+<B>Field Detail</B>
+</FONT></TD></TR></TABLE>
+
+<A NAME="translation"></A>
+
+<H3>translation</H3>
+<PRE>
+public edu.ohiou.lev_neiman.sceneapi.basic.Coordinate <B>translation</B></PRE>
+<DL><DD>how far away is this node from its parent?<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<A NAME="scale"></A>
+
+<H3>scale</H3>
+<PRE>
+public edu.ohiou.lev_neiman.sceneapi.basic.Coordinate <B>scale</B></PRE>
+<DL><DD>how big is this node compared to its parent? 1.0 is same size.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<A NAME="rotation"></A>
+
+<H3>rotation</H3>
+<PRE>
+public edu.ohiou.lev_neiman.sceneapi.basic.Coordinate <B>rotation</B></PRE>
+<DL><DD>what is the vector about which this node is rotated, relative to its parent?<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<A NAME="rotation_angle"></A>
+
+<H3>rotation_angle</H3>
+<PRE>
+public float <B>rotation_angle</B></PRE>
+<DL><DD>what is the angle of rotation about that vector?<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<A NAME="no_disp_list"></A>
+
+<H3>no_disp_list</H3>
+<PRE>
+protected static final int <B>no_disp_list</B></PRE>
+<DL><DD>if display_list == -1 then we know it can't refer to valid OpenGL display list, since they cannot be negative.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<A NAME="display_list"></A>
+
+<H3>display_list</H3>
+<PRE>
+protected int <B>display_list</B></PRE>
+<DL><DD>if this does not equal to -1 then it refers to some Display List in memory.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<A NAME="ppop"></A>
+
+<H3>ppop</H3>
+<PRE>
+protected boolean <B>ppop</B></PRE>
+<DL><DD>if this is true, then modelview matrix is not pushed and poped around rendering this node.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<A NAME="name"></A>
+
+<H3>name</H3>
+<PRE>
+public java.lang.String <B>name</B></PRE>
+<DL><DD>prbl should make this private later on if i still use it.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<A NAME="children"></A>
+
+<H3>children</H3>
+<PRE>
+public java.util.LinkedList <B>children</B></PRE>
+<DL><DD>References to the children nodes. Uses Java's LinkedList data structure.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<A NAME="parent"></A>
+
+<H3>parent</H3>
+<PRE>
+public edu.ohiou.lev_neiman.sceneapi.basic.ANode <B>parent</B></PRE>
+<DL><DD>reference to the parent node.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF"><TD COLSPAN=1><FONT SIZE="+2">
+<B>Constructor Detail</B>
+</FONT></TD></TR></TABLE>
+
+<A NAME="ANode()"></A>
+
+<H3>ANode</H3>
+<PRE>
+public <B>ANode</B>()</PRE>
+<DL><DD>default constructor<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<A NAME="ANode(java.lang.String)"></A>
+
+<H3>ANode</H3>
+<PRE>
+public <B>ANode</B>(java.lang.String&nbsp;name)</PRE>
+<DL><DD>constructor<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>name</CODE> - String - name for this node.</DD>
+</DL>
+<HR>
+
+<A NAME="ANode(int)"></A>
+
+<H3>ANode</H3>
+<PRE>
+public <B>ANode</B>(int&nbsp;list)</PRE>
+<DL><DD>constructor<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>list</CODE> - int - display list that this node will call.</DD>
+</DL>
+<HR>
+
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF"><TD COLSPAN=1><FONT SIZE="+2">
+<B>Method Detail</B>
+</FONT></TD></TR></TABLE>
+
+<A NAME="init()"></A>
+
+<H3>init</H3>
+<PRE>
+private void <B>init</B>()</PRE>
+<DL><DD>initializes member variables to their default values.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<A NAME="addChild(edu.ohiou.lev_neiman.sceneapi.basic.ANode)"></A>
+
+<H3>addChild</H3>
+<PRE>
+public void <B>addChild</B>(edu.ohiou.lev_neiman.sceneapi.basic.ANode&nbsp;child)</PRE>
+<DL><DD>add child to this node.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>child</CODE> - ANode</DD>
+</DL>
+<HR>
+
+<A NAME="setParent(edu.ohiou.lev_neiman.sceneapi.basic.ANode)"></A>
+
+<H3>setParent</H3>
+<PRE>
+public void <B>setParent</B>(edu.ohiou.lev_neiman.sceneapi.basic.ANode&nbsp;parent)</PRE>
+<DL><DD>set parent on this node.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>parent</CODE> - ANode</DD>
+</DL>
+<HR>
+
+<A NAME="render(javax.media.opengl.GLAutoDrawable)"></A>
+
+<H3>render</H3>
+<PRE>
+public void <B>render</B>(javax.media.opengl.GLAutoDrawable&nbsp;g)</PRE>
+<DL><DD>This method should be typically called from render in all derived classes. This one just modifies the current ModelView matrix by this node's offset, rotation and scale.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>g</CODE> - GLAutoDrawable</DD>
+</DL>
+<HR>
+
+<A NAME="renderTree(javax.media.opengl.GLAutoDrawable, edu.ohiou.lev_neiman.sceneapi.basic.ANode)"></A>
+
+<H3>renderTree</H3>
+<PRE>
+public static void <B>renderTree</B>(javax.media.opengl.GLAutoDrawable&nbsp;contex,
+                              edu.ohiou.lev_neiman.sceneapi.basic.ANode&nbsp;root)</PRE>
+<DL><DD>This static function renders the tree with root as the root.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>contex</CODE> - GLAutoDrawable</DD>
+<DD><CODE>root</CODE> - ANode</DD>
+</DL>
+<HR>
+
+<A NAME="countNodes(edu.ohiou.lev_neiman.sceneapi.basic.ANode)"></A>
+
+<H3>countNodes</H3>
+<PRE>
+public static int <B>countNodes</B>(edu.ohiou.lev_neiman.sceneapi.basic.ANode&nbsp;root)</PRE>
+<DL><DD>counts the number of nodes in the tree with root as root.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>root</CODE> - ANode - root to the tree to count nodes of.</DD>
+<DT><B>Returns:</B><DD>int - number of nodes in root.</DD>
+</DL>
+<HR>
+
+<A NAME="countNodes(edu.ohiou.lev_neiman.sceneapi.basic.ANode, int)"></A>
+
+<H3>countNodes</H3>
+<PRE>
+private static int <B>countNodes</B>(edu.ohiou.lev_neiman.sceneapi.basic.ANode&nbsp;root,
+                              int&nbsp;count)</PRE>
+<DL><DD>counts the number of nodes in the tree with root as root.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>root</CODE> - ANode - root to the tree to count nodes of.</DD>
+<DD><CODE>count</CODE> - int - current count.</DD>
+<DT><B>Returns:</B><DD>int - number of nodes in root.</DD>
+</DL>
+<HR>
+
+<A NAME="getNormal(edu.ohiou.lev_neiman.sceneapi.basic.Coordinate, edu.ohiou.lev_neiman.sceneapi.basic.Coordinate, edu.ohiou.lev_neiman.sceneapi.basic.Coordinate)"></A>
+
+<H3>getNormal</H3>
+<PRE>
+public static edu.ohiou.lev_neiman.sceneapi.basic.Coordinate <B>getNormal</B>(edu.ohiou.lev_neiman.sceneapi.basic.Coordinate&nbsp;a,
+                                                                       edu.ohiou.lev_neiman.sceneapi.basic.Coordinate&nbsp;b,
+                                                                       edu.ohiou.lev_neiman.sceneapi.basic.Coordinate&nbsp;c)</PRE>
+<DL><DD>computes a normal between (a-c)x(b-c)<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>a</CODE> - Coordinate</DD>
+<DD><CODE>b</CODE> - Coordinate</DD>
+<DD><CODE>c</CODE> - Coordinate</DD>
+<DT><B>Returns:</B><DD>Coordinate</DD>
+</DL>
+<HR>
+
+<A NAME="drawCube(javax.media.opengl.GLAutoDrawable)"></A>
+
+<H3>drawCube</H3>
+<PRE>
+public static void <B>drawCube</B>(javax.media.opengl.GLAutoDrawable&nbsp;g)</PRE>
+<DL><DD>renders a simple cube.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>g</CODE> - GLAutoDrawable</DD>
+</DL>
+<HR>
+
+</BODY>
+</HTML>
