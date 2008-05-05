@@ -1,1 +1,0 @@
-javadoc -d c:\tmp\html -sourcepath * -subpackages edu.ohiou.lev_neiman.sceneapi
