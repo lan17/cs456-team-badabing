@@ -4,5 +4,16 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="lib/jogl.jar"/>
 	<classpathentry kind="lib" path="lib/jxl.jar"/>
+	<classpathentry kind="lib" path="lib/jogl-1.1.1a-webstart.zip"/>
+	<classpathentry kind="lib" path="lib/jogl-1.1.1a-webstart/jogl-natives-linux-amd64.jar"/>
+	<classpathentry kind="lib" path="lib/jogl-1.1.1a-webstart/jogl-natives-linux-i586.jar"/>
+	<classpathentry kind="lib" path="lib/jogl-1.1.1a-webstart/jogl-natives-macosx-ppc.jar"/>
+	<classpathentry kind="lib" path="lib/jogl-1.1.1a-webstart/jogl-natives-macosx-universal.jar"/>
+	<classpathentry kind="lib" path="lib/jogl-1.1.1a-webstart/jogl-natives-solaris-amd64.jar"/>
+	<classpathentry kind="lib" path="lib/jogl-1.1.1a-webstart/jogl-natives-solaris-i586.jar"/>
+	<classpathentry kind="lib" path="lib/jogl-1.1.1a-webstart/jogl-natives-solaris-sparc.jar"/>
+	<classpathentry kind="lib" path="lib/jogl-1.1.1a-webstart/jogl-natives-solaris-sparcv9.jar"/>
+	<classpathentry kind="lib" path="lib/jogl-1.1.1a-webstart/jogl-natives-windows-amd64.jar"/>
+	<classpathentry kind="lib" path="lib/jogl-1.1.1a-webstart/jogl-natives-windows-i586.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

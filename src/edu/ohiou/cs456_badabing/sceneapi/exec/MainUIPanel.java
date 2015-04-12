@@ -293,7 +293,9 @@ public class MainUIPanel extends JPanel implements ActionListener
      */
     public static void main( String[] args )
     {
-        System.load( System.getProperty( "user.dir" ) + "/jogl.dll" );
+        //System.load( System.getProperty( "user.dir" ) + "/jogl.dll" );
+        System.loadLibrary("jogl");
+
         frame = new JFrame( "Accounting Style Deer Population Model Visualizer.  Team BadaBing, CS456 Spring 2008." );
         frame.setSize( 910, 700 );
         frame.setMaximumSize( new Dimension( 1024, 768 ) );
